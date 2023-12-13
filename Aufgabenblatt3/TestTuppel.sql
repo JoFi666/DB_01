@@ -20,19 +20,19 @@ VALUES  (1, Adlerapotheke, "Lange Straße 5"),
         (7, "Anti-Ableben-Apotheke", "Hurtigruten 8");
 
 INSERT INTO Untersuchung(UntersuchungsID, Art, URL)
-VALUES  (1, Blutuntersuchung, null),
-        (2, Urinanalyse, null),
-        (3, Röntgenuntersuchung, null),
-        (4, Magnetresonanztomographie, null),
-        (5, Elektrokariogramm, null),
-        (6, Ultraschalluntersuchung, null),
-        (7, Computertomographie, null),
-        (8, Hautbiopsie, null),
-        (9, Lungenfunktionstest, null);
+VALUES (1, Blutuntersuchung, null),
+       (2, Urinanalyse, null),
+       (3, Röntgenuntersuchung, null),
+       (4, Magnetresonanztomographie, null),
+       (5, Elektrokardiogramm, null),
+       (6, Ultraschalluntersuchung, null),
+       (7, Computertomographie, null),
+       (8, Hautbiopsie, null),
+       (9, Lungenfunktionstest, null);
 
 INSERT INTO Hausarzt(HausarztID, Name, Adresse)
 VALUES (1, Mayer, "Kurzer Weg 5"),
-        (2, Huber, "Langer Weg 9");
+       (2, Huber, "Langer Weg 9");
 
 INSERT INTO Facharzt(FacharztID, Name, Adresse, Fachgebiet)
 VALUES (1, Bredehöft, "Am Steinberg 17", "Hals, Nasen, Ohren"),
@@ -40,16 +40,21 @@ VALUES (1, Bredehöft, "Am Steinberg 17", "Hals, Nasen, Ohren"),
        (3, Öpni, "Schweizerstraße 1/1", "Notfallmedizin"),
        (4, Petersen, "Eierstraße 5","Augen");
 
-INSERT INTO Befund(BefundID, Beschreibung, URL)
-VALUES  (1, "Nüchternblutzucker 90 mg/dL."),
-        (2, "Proteinurie positiv."),
-        (3, "Degenerative Veränderungen der Wirbelsäule."),
-        (4, "Keine Anomalien im Gehirn nachgewiesen."),
-        (5, "Normaler Sinusrhythmus, keine ST-Segment-Veränderungen."),
-        (6, "Normale Leber- und Nierenstruktur."),
-        (7, "CT des Abdomens: Appendizitis bestätigt."),
-        (8, "Melanozitäres Niveau ohne Anzeichen von Malignität."),
-        (9, "Normale Lungenfunktion.");
+INSERT INTO Labor(LaborID, Name, Adresse)
+VALUES (1, P5, "Hauptstraße 12"),
+       (2, GeoLab, "Markstraße 50"),
+       (3, EpiLab, "Seuchenstraße 666");
+
+INSERT INTO Befund(BefundID, Beschreibung, Weiterführendes)
+VALUES (1, "Nüchternblutzucker 90 mg/dL.", null),
+       (2, "Proteinurie positiv.", null),
+       (3, "Degenerative Veränderungen der Wirbelsäule.", null),
+       (4, "Keine Anomalien im Gehirn nachgewiesen.", null),
+       (5, "Normaler Sinusrhythmus, keine ST-Segment-Veränderungen.", null),
+       (6, "Normale Leber- und Nierenstruktur.", null),
+       (7, "CT des Abdomens: Appendizitis bestätigt.", null),
+       (8, "Melanozitäres Niveau ohne Anzeichen von Malignität.", null),
+       (9, "Normale Lungenfunktion.", null);
 
 INSERT INTO Patientenakte(AktenID)
 VALUES (1),
@@ -71,16 +76,16 @@ VALUES (1, Blut),
        (5, Gewebe);
 
 INSERT INTO eRezept(RezeptID, Medikament, Art)
-VALUES (1, Kassen),
-       (2, Privat),
-       (3, OTC),
-       (4, Heilmittelverordnung),
-       (5, T),
-       (6, BTM),
-       (7, Hilfsmittel);
+VALUES (1, null, Kassen),
+       (2, null, Privat),
+       (3, null, OTC),
+       (4, null, Heilmittelverordnung),
+       (5, null, T),
+       (6, null, BTM),
+       (7, null, Hilfsmittel);
 
 INSERT INTO Messwerte(MesswertID, ErgebnisURL)
-VALUES (1,null ),
+VALUES (1, null ),
        (2, null),
        (3, null),
        (4, null),
