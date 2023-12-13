@@ -1,5 +1,5 @@
 INSERT INTO Patienten(PatientenID, Vorname, Nachname, Adresse, Geburtsdatum, Versichertenstatus)
-VALUES  (1, Franz, Gilbert, "Elsterweg 7" , 05.12.2003, privat),
+VALUES  (1, Franz, Gilbert, "Elsterweg 7" , 05.12.2003, privat);
         (2, Herbert, Mayer, "Berliner Straße 18", 12.05.1988, gesetzlich),
         (3, Gisela, Petersen, "Franziskanerweg 5", 01.01.1960, gesetzlich),
         (4, Magdalena, Walther, "Querstraße 60", 25.10.1999, privat),
@@ -30,20 +30,15 @@ VALUES  (1, Blutuntersuchung, null),
         (8, Hautbiopsie, null),
         (9, Lungenfunktionstest, null);
 
-INSERT INTO Hausarzt(ArztID, Name, Adresse)
+INSERT INTO Hausarzt(HausarztID, Name, Adresse)
 VALUES (1, Mayer, "Kurzer Weg 5"),
         (2, Huber, "Langer Weg 9");
 
-INSERT INTO Labor(LaborID, Name, Adresse)
-VALUES (1, P5, "Hauptstraße 12"),
-       (2, GeoLab, "Markstraße 50"),
-       (3, EpiLab, "Seuchenstraße 666");
-
-INSERT INTO Facharzt(FacharztID, Fachgebiet)
-VALUES (1, "Hals,Nasen,Ohren"),
-       (2, "Handchirugie"),
-       (3, "Notfallmedizin"),
-       (4, "Augen");
+INSERT INTO Facharzt(FacharztID, Name, Adresse, Fachgebiet)
+VALUES (1, Bredehöft, "Am Steinberg 17", "Hals, Nasen, Ohren"),
+       (2, Michaelis, "Inselgarten 8", "Handchirugie"),
+       (3, Öpni, "Schweizerstraße 1/1", "Notfallmedizin"),
+       (4, Petersen, "Eierstraße 5","Augen");
 
 INSERT INTO Befund(BefundID, Beschreibung, URL)
 VALUES  (1, "Nüchternblutzucker 90 mg/dL."),
@@ -95,4 +90,5 @@ VALUES (1,null ),
        (8, null),
        (9, null),
        (10, null);
+
 
