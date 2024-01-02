@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/EntityTabellen.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/befüllungBspTupel.sql" dialect="Oracle" />
+    <file url="file://$USER_HOME$/Downloads/Kap. 5 Uni-Schema mit Inhalten-20231128/Uni_daten_Oracle.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Downloads/Kap. 5 Uni-Schema mit Inhalten-20231128/Uni_daten_PostgreSQL.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Downloads/Kap. 5 Uni-Schema mit Inhalten-20231128/Uni_schema_Oracle.sql" dialect="GenericSQL" />
+  </component>
+</project>
